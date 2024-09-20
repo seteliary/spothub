@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
+export const Overflow = styled.div`
+  overflow-x: auto
+`
+
 export const TableContainer = styled.table`
+  width: 100%;
   margin-top: 12px;
   border: 2px solid #B0B0B0;
   border-collapse: collapse;

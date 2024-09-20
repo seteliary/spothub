@@ -23,6 +23,7 @@ export default function Details() {
           <Title text="Detalhes do Pedido de Inserção"/>
         </TitleContainer>
         <Text content="Para visualizar as informações de determinada categoria, clique na aba contendo o nome da categoria desejada." />
+        <p className="mobile-info"><i class="fa-solid fa-circle-info"></i>Arraste as abas para o lado para ver mais categorias.</p>
         <InfoCard>
           <ul className="card-header">
             <li className={activeContent === "pi" ? "active-tab" : "inactive-tab" } onClick={() => updateContent("pi")}>PI</li>
@@ -108,7 +109,7 @@ export default function Details() {
               </div>
               <div className="info">
                 <span>E-mail</span>
-                <span>financeiro@actionooh.art.br</span>
+                <span className="mail">financeiro@actionooh.art.br</span>
               </div>
               <div className="info">
                 <span>Total bruto</span>

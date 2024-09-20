@@ -15,5 +15,9 @@ export const FooterContainer = styled.footer`
     font-size: 14px;
     color: #B0B0B0;
     text-align: right;
+
+    @media (max-width: 640px) {
+      text-align: center;
+    }
   }
 `

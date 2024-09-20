@@ -15,6 +15,20 @@ export const Content = styled.main`
   flex-direction: column;
   gap: 12px;
   color: #515151;
+
+  .mobile-info {
+    display: none;
+
+    @media (max-width: 641px) {
+      display: block;
+      font-size: 12px;
+      color: #004AAD;
+      margin-top: 8px;
+
+      i {
+        margin-right: 4px;
+      }
+  }
 `
 
 export const InfoCard = styled.div`
@@ -55,6 +69,12 @@ export const InfoCard = styled.div`
     span:first-child {
       font-weight: bold;
       margin-bottom: 4px;
+    }
+
+    @media (max-width: 576px) {
+      .mail {
+        max-width: 50px;
+      }
     }
   }
 
