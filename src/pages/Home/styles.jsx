@@ -8,7 +8,7 @@ export const Container = styled.div`
 
 export const Content = styled.main`
   width: 100%;
-  height: 100vh;
+  height: 88vh;
   max-width: 1280px;
   padding: 32px 16px;
   display: flex;
@@ -65,7 +65,7 @@ export const Content = styled.main`
     transition: 0.4s ease-in-out;
 
     &:hover {
-      color: #003276;
+      color: #1B6CD7;
     }
 
     .fa-trash-alt {

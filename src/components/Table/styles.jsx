@@ -26,7 +26,7 @@ export const TableContainer = styled.table`
   .page-indicator {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     .fas {
       display: flex;
@@ -41,10 +41,16 @@ export const TableContainer = styled.table`
 
       &.fa-arrow-left {
         background-color: #B0B0B0;
+        cursor: auto;
       }
 
       &.fa-arrow-right {
         background-color: #004AAD;
+        transition: 0.3s ease-in-out;
+        
+        &:hover {
+          background-color: #1B6CD7;
+        }
       }
     }
   }
@@ -72,6 +78,11 @@ export const IconButtons = styled.div`
 
       &.fa-bars {
         background-color: #515151;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #717171;
+        }
       }
     }
   }

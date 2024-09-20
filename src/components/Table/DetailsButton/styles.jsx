@@ -13,7 +13,9 @@ export const ButtonLink = styled(Link)`
   font-size: 11px;
   border-radius: 999px;
   padding-top: 2px;
+  transition: 0.3s ease-in-out;
 
-  .fa-search {
+  &:hover {
+    background-color: #1B6CD7;
   }
 `
