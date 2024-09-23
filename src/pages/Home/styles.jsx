@@ -8,7 +8,6 @@ export const Container = styled.div`
 
 export const Content = styled.main`
   width: 100%;
-  height: 88vh;
   max-width: 1280px;
   padding: 32px 16px;
   display: flex;
@@ -73,6 +72,10 @@ export const Content = styled.main`
     }
   }
 
+  .mobile-info {
+    display: none;
+  }
+
   @media (max-width: 640px) {
     .filters, .inputs {
       flex-direction: column;
@@ -91,5 +94,16 @@ export const Content = styled.main`
       width: 110px;
       align-self: flex-start;
     }
+
+    .mobile-info {
+      display: block;
+      font-size: 12px;
+      color: #004AAD;
+      margin-top: 16px;
+      margin-bottom: -8px;
+
+      i {
+        margin-right: 4px;
+      }
   }
 `

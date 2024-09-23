@@ -27,6 +27,7 @@ export default function Home() {
           </div>
           <button type="reset"><i class="fas fa-trash-alt"></i>Remover filtros</button>
         </div>
+        <p className="mobile-info"><i class="fa-solid fa-circle-info"></i>Arraste as abas para o lado para ver mais categorias.</p>
         <Table/>
         <Footer/>
       </Content>

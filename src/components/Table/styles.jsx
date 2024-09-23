@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Overflow = styled.div`
-  overflow-x: auto
+  overflow-x: auto;
 `
 
 export const TableContainer = styled.table`
