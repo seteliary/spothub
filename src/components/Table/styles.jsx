@@ -75,40 +75,45 @@ export const TableContainer = styled.table`
     border: none;
   }
 
-  .fas {
-    cursor: pointer;
-  }
+  // .fas {
+  //   cursor: pointer;
+  // }
 
   .page-indicator {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
-    .fas {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 24px;
-      height: 24px;
-      color: #fff;
-      font-size: 11px;
-      border-radius: 999px;
-      padding-top: 2px;
+  .active {
+    background-color: #004AAD;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 
-      &.fa-arrow-left {
-        background-color: #B0B0B0;
-        cursor: auto;
-      }
-
-      &.fa-arrow-right {
-        background-color: #004AAD;
-        transition: 0.3s ease-in-out;
-        
-        &:hover {
-          background-color: #1B6CD7;
-        }
-      }
+    &:hover {
+      background-color: #1B6CD7;
     }
+  }
+
+  .inactive {
+    background-color: #B0B0B0;
+    cursor: auto;
+  }
+
+  .active, .inactive {
+    border-radius: 999px;
+  }
+
+  .fas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    font-size: 11px;
+    padding-top: 2px;
+    }
+  }
   }
 `
 
