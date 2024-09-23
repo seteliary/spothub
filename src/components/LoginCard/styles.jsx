@@ -6,7 +6,10 @@ export const Container = styled.div`
   justify-content: center;
   background-color: #fff;
   border-radius: 16px;
-  width: 50%;
+
+  @media (max-width: 641px) {
+    flex-direction: column;
+  }
 `
 
 export const LogoContainer = styled.div`
@@ -18,14 +21,21 @@ export const LogoContainer = styled.div`
   border-bottom-right-radius: 999px;
   border-top-left-radius: 73px;
   border-bottom-left-radius: 73px;
-  width: 850px;
   height: 370px;
 
   .logo {
-    width: 270px;
+    width: 300px;
     height: 100%;
     object-fit: contain;
     margin-right: 16px;
+    padding: 32px;
+  }
+
+  @media (max-width: 641px) {
+    height: 100%;
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
   }
 `
 
@@ -48,5 +58,9 @@ export const InputsContainer = styled.div`
       color: #004AAD;
       cursor: pointer;
     }
+  }
+
+  @media (max-width: 641px) {
+    padding: 40px;
   }
 `
